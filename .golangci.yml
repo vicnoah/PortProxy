@@ -1,0 +1,39 @@
+version: '2'
+linters:
+  default: standard
+  enable:
+    - lll
+  settings:
+    lll:
+      line-length: 100
+      tab-width: 4
+    staticcheck:
+      # All of staticcheck, but the checks on naming and the wording of comments
+      checks:
+        - all
+        - -ST1000
+        - -ST1003
+        - -ST1016
+        - -ST1020
+        - -ST1021
+        - -ST1022
+        - -QF1008
+  exclusions:
+    # defer f.Close() and the like
+    presets:
+      - std-error-handling
+    rules:
+      # A line long for a string, kept whole so that it can be searched for
+      - linters:
+          - lll
+        source: '"[^"]{50,}"|`'
+formatters:
+  # Not gofumpt: the module is named portproxy, without a dot, and it would
+  # group portproxy/... with the standard library
+  enable:
+    - gofmt
+    - golines
+  settings:
+    golines:
+      max-len: 100
+      tab-len: 4

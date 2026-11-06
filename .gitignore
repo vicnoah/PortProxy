@@ -1,0 +1,7 @@
+/build/
+/.mygo/
+mygo_windows_*.syso
+mygo-update.key
+mygo-update.pub
+.DS_Store
+/tmp
