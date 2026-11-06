@@ -624,7 +624,7 @@ func TestI18nCatalogs(t *testing.T) {
 		t.Errorf("English catalog: %q / %q", en.NewRule(), en.ColType())
 	}
 	if zh.NewRule() != "新建规则" || zh.ColType() != "类型" ||
-		zh.Welcome() != "欢迎使用 Port Proxy GUI ！" {
+		zh.Welcome() != "欢迎使用 PortProxy！" {
 		t.Errorf("Chinese catalog: %q / %q / %q", zh.NewRule(), zh.ColType(), zh.Welcome())
 	}
 	if en.RulesCount(1) != "1 Rule" || en.RulesCount(3) != "3 Rules" {

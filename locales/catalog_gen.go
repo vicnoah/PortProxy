@@ -304,11 +304,11 @@ func (msgs Messages) LegendDisabled() string {
 	return Catalog.Format(msgs.locale, "legendDisabled", nil)
 }
 
-// Welcome says "Welcome to Port Proxy GUI !"
+// Welcome says "Welcome to PortProxy!"
 // in the language the app shows.
 func Welcome() string { return In(i18n.Locale()).Welcome() }
 
-// Welcome says "Welcome to Port Proxy GUI !"
+// Welcome says "Welcome to PortProxy!"
 // in the language of msgs.
 func (msgs Messages) Welcome() string {
 	return Catalog.Format(msgs.locale, "welcome", nil)

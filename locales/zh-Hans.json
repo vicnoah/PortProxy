@@ -33,7 +33,7 @@
   "tableLabel": "转发规则",
   "legendEnabled": "已启用",
   "legendDisabled": "已禁用",
-  "welcome": "欢迎使用 Port Proxy GUI ！",
+  "welcome": "欢迎使用 PortProxy！",
   "serviceWarning": "IP Helper 服务未启动（点击启动）",
   "serviceRunning": "IP Helper 运行正常",
   "serviceStopped": "IP Helper 已停止",

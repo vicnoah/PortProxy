@@ -33,7 +33,7 @@
   "tableLabel": "Forwarding rules",
   "legendEnabled": "Enabled",
   "legendDisabled": "Disabled",
-  "welcome": "Welcome to Port Proxy GUI !",
+  "welcome": "Welcome to PortProxy!",
   "serviceWarning": "IP Helper service is not running (Click to start)",
   "serviceRunning": "IP Helper running",
   "serviceStopped": "IP Helper stopped",
