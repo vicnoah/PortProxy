@@ -174,7 +174,7 @@ func (a *app) sidebar(c *ui.Context, d *design) {
 					Shadow(0, 0, 6, 0, dot.Alpha(0.8))
 				ui.Text(c, text).FontSize(11).TextColor(d.sideMuted).SingleLine()
 			})
-			ui.Text(c, "v"+appVersion).FontSize(10).
+			ui.Text(c, "v"+appVersion()).FontSize(10).
 				TextColor(d.sideMuted.Alpha(0.55)).SingleLine()
 		})
 	})

@@ -14,7 +14,7 @@ func (a *app) aboutModal(c *ui.Context, d *design) {
 					ui.Icon(c, icoLogo).FontSize(30).TextColor(d.accentText)
 				})
 				ui.Text(c, appTitle).FontSize(20).FontWeight(600).SingleLine()
-				pill(c, "v"+appVersion, d.accent, d.accent.Alpha(0.11))
+				pill(c, "v"+appVersion(), d.accent, d.accent.Alpha(0.11))
 			})
 
 			ui.Divider(c)

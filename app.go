@@ -19,10 +19,18 @@ import (
 
 const (
 	appTitle        = "PortProxy"
-	appVersion      = "1.4.2"
 	filterAll       = ""
 	filterUngrouped = "\x00ungrouped"
 )
+
+// appVersion is the version mygo build stamped into the binary, so About and
+// the updater agree after a release without editing a constant.
+func appVersion() string {
+	if v := mygo.App.Version(); v != "" {
+		return v
+	}
+	return "1.4.2"
+}
 
 var columnIDs = []string{
 	"status", "type", "listenOn", "listenPort", "connectTo", "connectPort", "comment",
